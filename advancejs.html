@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavance-JS</title>
+</head>
+<body>
+    <h1>Advance-JavaScript</h1>
+
+
+
+
+
+    <script>
+        function multiply(a,b){
+            return a + b
+        }
+
+        console.log(multiply(2,4))
+        console.log(multiply(3,6))
+
+
+        function sandy(a){
+            return function(b){
+                return a * b
+            } 
+        }
+
+        let val = sandy(5)
+        console.log(val(3))  
+
+
+        console.log(sandy(5)(3))
+
+
+
+
+        //function generators//
+
+        function* numberGenerator() {
+          yield 1;
+          yield 2;
+          yield 3;
+        }
+
+const gen = numberGenerator();
+
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+console.log(gen.next().done);  // true (no more values)
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
